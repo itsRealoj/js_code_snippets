@@ -1,15 +1,19 @@
+<!-- Using Debounce to perform a task after a given timeline. -->
+
 <!DOCTYPE html> 
 <html>
     <title> debounce </title>
     <body>
         <button id="myid">Click me</button> 
 
-        
+
         <script>
             const debounce = (fn, delay) => {
+
+                let timeoutId;
                 return function(...args){
 
-                    setTimeout(() => {
+                    timeoutId = setTimeout(() => {
                         fn(...args)
                     }, delay);
                 }
