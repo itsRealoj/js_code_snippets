@@ -2,9 +2,8 @@ let arr = [1,2,3];
 
 Array.prototype.ownMap = function(callback) {
   let mappedArr = [];
-  for(let i=0; i < this.length; i++) {
+  for(let i of this) {
     mappedArr.push(callback(this[i]))
-    console.log(this)
   }
   return mappedArr;
 }
