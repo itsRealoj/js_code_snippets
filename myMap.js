@@ -16,3 +16,4 @@ console.log('arr: ', arr);
 // not mutated and returns [1, 2, 3]
 console.log('newArr: ', newArr);
 // returns [2, 3, 4]
+
